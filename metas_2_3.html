@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metas 2 a 3 años</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: url("imagenes/fondo1.png") no-repeat center center/cover;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    width:100%;
+    min-height:100vh;
+    background: rgba(0,0,0,0.45);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.fade{
+    opacity:0;
+    transform: translateY(20px);
+    animation: aparecer 0.8s forwards;
+}
+
+.delay1{ animation-delay: 0.3s; }
+.delay2{ animation-delay: 0.8s; }
+.delay3{ animation-delay: 1.0s; }
+
+@keyframes aparecer{
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+h1{
+    color:white;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    max-width:400px;
+    width:100%;
+    margin-top:20px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#1f3c88;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+    <h1 class="fade delay1">🎯 Mis metas de 2 a 3 años</h1>
+
+    <div class="card fade delay2">
+        <ul>
+            <li>Haberme graduado del SENA como programador</li>
+            <li>Trabajar como programador junior en una empresa</li>
+            <li>Comprar mi primera moto y vivir en un apartamento</li>
+            <li>Ganar el torneo de fútbol del SENA</li>
+        </ul>
+    </div>
+
+    <button class="fade delay3" onclick="location.href='index.html'">
+        ← Volver al inicio
+    </button>
+</div>
+</body>
+</html>

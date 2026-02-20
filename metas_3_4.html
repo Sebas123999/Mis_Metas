@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metas 3 a 4 años</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: url("imagenes/fondo2.png") no-repeat center center/cover;
+    min-height:100vh;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.45);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.fade{
+    opacity:0;
+    transform: translateY(20px);
+    animation: aparecer 0.8s forwards;
+}
+
+.delay1{ animation-delay:0.3s; }
+.delay2{ animation-delay:0.8s; }
+.delay3{ animation-delay:1.0s; }
+
+@keyframes aparecer{
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+h1{ color:white; }
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    max-width:400px;
+    margin-top:20px;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#1f3c88;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+    <h1 class="fade delay1">🎯 Mis metas de 3 a 4 años</h1>
+
+    <div class="card fade delay2">
+        <ul>
+            <li>Seguir trabajando como programador más experto</li>
+            <li>Empezar ingeniería de sistemas</li>
+            <li>Invertir en un negocio o vivienda</li>
+        </ul>
+    </div>
+
+    <button class="fade delay3" onclick="location.href='index.html'">
+        ← Volver al inicio
+    </button>
+</div>
+</body>
+</html>
